@@ -1,0 +1,69 @@
+\documentclass[letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[longnamesfirst]{natbib}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{fancyhdr}
+%\usepackage[colorlinks]{hyperref}
+\usepackage{geometry}
+\geometry{a4paper}
+\graphicspath{{Plots/}}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{comment}
+\usepackage{import}
+\newcommand{\GG}[1]{}
+\newcommand{\Lagr}{\mathcal{L}}
+\usepackage{tikz}
+% \usepackage{lineno}
+\usepackage{todonotes}
+\usetikzlibrary{shapes,arrows}
+\tikzstyle{block} = [rectangle, draw, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzset{
+	>=stealth',
+	point/.style={
+	rectangle, rounded corners, draw=black, very thick, text width=6.5em, minimum height=2em, text centered},
+	line/.style={
+	->, thick, shorten <=2pt, shorten >=2pt,
+	}
+	}
+
+
+
+\title{Bottoms Up: The Standard Model Effective Field Theory and the Boundary of the Model Concept}
+\author{}%Philip Bechtle, Cristin Chall, Martin King, Michael Kr{\"a}mer, Peter M{\"a}ttig, \\ Michael St{\"o}ltzner}
+\date{}
+
+\begin{document}
+\maketitle
+
+% \linenumbers
+
+\input{intro}
+
+\input{data}
+
+\input{eftintro}
+
+\input{philosophy}
+
+\input{physics}
+
+\input{analysis}
+
+\input{conclusion}
+
+\section{Acknowledgements}
+This research was funded by the German Research Foundation (DFG grant FOR 2063). 
+
+\bibliography{smeference}
+\bibliographystyle{apalike}
+
+\end{document}
