@@ -1,45 +1,54 @@
 %!TEX root=main.tex
 
 \begin{abstract}
-Experiments in particle physics have hitherto failed to produce any significant evidence in
-searches for physics beyond the Standard Model (BSM) that are based on the predictions of explicit models. 
-As a result, physicists have increasingly turned to model-independent strategies as tools for parametrising a wide range of possible BSM effects. Most popular among them is the Standard Model effective field theory (SM-EFT). In this paper, we describe three stages of this bottom-up EFT and analyse it in the context of the philosophical discussions about models, theories, and effective field theories. We find that while the SM-EFT is a quantum field theory that shares many features with both models and theories, in its general form it lacks some of the important characteristic features of models when it comes to representation. This case study also provides interesting lessons concerning the role of representation in models of new physics and the minimal criteria be considered a model in physics.
+Experiments in particle physics have hitherto failed to produce any significant evidence for the many explicit models of physics beyond the Standard Model (BSM) that had been proposed over the past decades. 
+As a result, physicists have increasingly turned to model-independent strategies as tools in searching for a wide range of possible BSM effects.
+In this paper, we describe the Standard Model Effective Field Theory (SM-EFT) and analyse it in the context of the philosophical discussions about models, theories, and (bottom-up) effective field theories.
+We find that while the SM-EFT is a quantum field theory, assisting experimentalists in searching for deviations from the SM, in its general form it lacks some of the characteristic features of models. 
+Those features only come into play if put in by hand or prompted by empirical evidence for deviations. 
+Employing different philosophical approaches to models, we argue that the case study suggests not to take a view on models that is overly permissive because it blurs the lines between the different stages of the SM-EFT research strategies and glosses over particle physicists' motivations for undertaking this bottom-up approach in the first place. 
+More generally, looking at EFTs from the perspective of modelling does not require taking a stance on some specific brand of realism or taking sides in the debate between reduction and emergence into which EFTs have recently been embedded.
 \end{abstract}
 
 \section{Introduction}
 
-Since the 2012 discovery of the Standard Model (SM) Higgs boson, the Large Hadron Collider (LHC) has produced no significant evidence in favour of the many models beyond the Standard Model (BSM) that have been previously proposed. 
+To date, the Large Hadron Collider (LHC) has produced no significant evidence in favour of the many models beyond the Standard Model (BSM) that have been previously proposed. 
 The data gathered since has increasingly reduced the parameter space in which these existing models dwell, while not indicating along which lines new models should be developed.
-This has led to an increase in use of simplified models and more model-independent approaches that do not contain any explicit assumptions about the features of BSM physics apart from its consistency with the SM and general principles of quantum field theory. 
-We will focus on the presently most popular strategy, the Standard Model effective field theory (SM-EFT) that provides a framework for experimental searches for deviations from the SM undertaken to obtain information about or constraints on possible BSM physics.
-In this paper, we examine some of the philosophical implications of this turn towards model-independence.
-We want to ask: what is the research strategy SM-EFT, what is model-independent about it, and how should we understand it in the context of the philosophical literature on models and effective field theories?
+This has led to an increase in use of approaches that do not contain any explicit assumptions about the features of BSM physics apart from its consistency with the SM and general principles of quantum field theory.
+These approaches are often called `model independent' and we will describe this in more detail in \ref{sec:eftintro}.
+We will focus on a presently popular tool in model-independent approaches, the Standard Model effective field theory (SM-EFT), which provides a framework for systematically quantifying constraints on SM deviations.
+In this paper, we examine some of the philosophical implications of this turn towards model-independence, in particular the under-emphasised practical aspects of the use of the SM-EFT at the LHC.
+We want to ask: what is the SM-EFT and the bottom-up research strategy, what is model-independent about it, and how should we understand it in the context of the philosophical literature on models and effective field theories?
 
-SM-EFT is not the only research strategy in particle physics emerging after the failure to find evidence for any of the concrete BSM models that theoreticians had developed over decades. 
-Simplified models that only specify some properties of BSM physics, have already attracted philosophical attention. 
-\citet{mccoymassimi} have recently examined their nature and found that they could be understood as models in a suitable extension of practice-based the models as mediators (MaM) approach \citep{morganmorrison}.
-This prompts the question whether the same treatment extends to the SM-EFT. 
-We find however, that it does not apply as their representative capacities and their relations to theory and data are quite distinct. 
+% SM-EFT is not the only research strategy in particle physics emerging after the failure to find evidence for any of the concrete BSM models that theoreticians had developed over decades. 
+% Simplified models that only specify some properties of BSM physics, have already attracted philosophical attention. 
+% \citet{mccoymassimi} have recently examined their nature and found that they could be understood as models in a suitable extension of practice-based the models as mediators (MaM) approach \citep{morganmorrison}.
+% This prompts the question whether the same treatment extends to the SM-EFT. 
+% We find however, that it does not apply as their representative capacities and their relations to theory and data are quite distinct. 
 
-An EFT efficiently describes phenomena on a specific energy scale by availing itself of a separation of scales and absorbing the physics at higher energies only into the parameters of lower scale physics that are determined by experiments at those lower energies. The main point is that the limit of validity is already built into the theory. While top-down EFTs make certain assumptions about high-energy phenomena to specify or justify the low-energy theory, bottom-up EFTs are typically developed to parametrize and aid in searches for hitherto unknown high-energy physics.\footnote{Wells considers EFTs as part of the larger class of effective theories that ``are able to organize phenomena under an efficient set of principles" \citep[p.~1]{wells2012} by being manifestly incomplete.}
+An EFT efficiently describes phenomena on a specific energy scale by availing itself of a separation of scales and absorbing the physics at higher energies only into the parameters of lower scale physics that are determined by experiments at those lower energies. 
+The main point is that the limit of validity is already built into the theory. 
+While top-down EFTs make certain assumptions about high-energy phenomena to specify or justify the low-energy theory, bottom-up EFTs are typically developed to parametrize observations or aid in searches for hitherto unknown high-energy physics.\footnote{Wells considers EFTs as part of the larger class of effective theories that ``are able to organize phenomena under an efficient set of principles" \citep[p.~1]{wells2012} by being manifestly incomplete.}[find better place]
 %	organizes phenomena under an efficient set of principles and is not too complex to allow one to effectively make predictions. 
 %But it is manifestly incomplete and restricted to a certain energy range. 
 As we shall show, EFTs share key properties with models, among them limited validity, autonomy, and practical efficiency. 
 %It shares this property with models. 
-But as \citet{hartmann2001} has shown they also exhibit features that are typical for theories. 
+But as \citet{hartmann2001} has argued they also exhibit features that are typical for theories. 
 This raises the question to what extent SM-EFT exhibits features of theories and models, and what this teaches about the relationship between models and theories in elementary particle physics.
-Hartmann and other philosopers mostly focus on what are called \textit{top-down} EFTs, but the SM-EFT is part of a \textit{bottom-up} strategy.
-Top-down EFT typically produce very specific predictions while bottom-up EFTs rather predict limits for possible physics. 
-In the case of SM-EFT---or similar approaches---the bottom-up EFT is explicitly constructed as deviations from the SM with its parameters fixed by the available experimental evidence. 
+\citet{hartmann2001} and other philosophers mostly focus on what are called \textit{top-down} EFTs, but the SM-EFT is part of a \textit{bottom-up} strategy.
+Top-down EFT typically produce very specific predictions while bottom-up EFTs rather used to obtain limits for possible physics. 
+In the case of SM-EFT---or similar approaches---the bottom-up EFT is explicitly constructed as deviations from the SM with its parameters constrained by the available experimental evidence. 
 %Top-down EFTs provide an effective description of low-energy physics within the context of a more fundamental theory, while bottom-up %EFTs are parts of attempts to find such theories. 
 We find that the answers to the questions we ask differ depending on the stage of the bottom-up strategy.
 %{\MSnote More generally, it seems to us that focusing on models introduces a new perspective into the present philosophical debates %about EFTs that are largely about the alternatives selective realism vs. instrumentalism and reduction to a fundamental theory vs. %emergence of the EFT. }
 
-In order to undertake this analysis and to answer our guiding questions, we must lay some groundwork distinguishing the methods of searching for new physics and the variety of views on models and EFTs in the philosophical literature. 
-In Section~\ref{sec:data} we provide empirical data indicating the increasing popularity of model-independent approaches. 
+
+In this paper we examine the SM-EFT through the lens of the model debate, specifically through the popular models-as-mediators approach of \citet{morganmorrison}, which was also extended and applied to simplified models in particle physics by \citet{mccoymassimi}, as well as the semantic approach of \citet{hartmann1999} and the artefactual account of \citet{knuuttila2011}. 
+% In order to undertake this analysis and to answer our guiding questions, we must lay some groundwork distinguishing the methods of searching for new physics and the variety of views on models and EFTs in the philosophical literature. 
+In Section~\ref{sec:data} we provide empirical data indicating the increasing popularity EFT approaches in particle physics. 
 In Section~\ref{sec:eftintro} we introduce three kinds of approaches presently applied by particle physicists in the search for new physics: full BSM models, simplified models, and SM-EFT. 
 Section~\ref{sec:models} provides the relevant background from the contemporary philosophical debates about models and effective field theories. 
 Section~\ref{sec:classification} presents the model-independent strategy for finding new physics using the bottom-up approach of the SM-EFT, which we subdivide into three stages.
 We show this strategy in action with a case study of b-physics in Section~\ref{sec:BphysicsConcepts}. 
 Finally, Section~\ref{sec:analysis} provides a philosophical analysis of the SM-EFT strategy.  
-In particular, we distil four lessons that concern: i) the relation that SM-EFT bears to models and theories in semantic \citep{hartmann1998} and practice-based approaches \citep{morganmorrison}; ii) the role of representation in models of new physics; and iii) the minimal criteria for something be considered a model in physics; iv) how a model-focused look at the presently popular practice of SM-EFT can bring a new perspective into recent philosophical debates about EFT that have taken it simply as a well-formulated theory on a particular scale that allows one to discuss traditional issues, such as realism vs. instrumentalism and reduction vs. emergence, in the light of the separation of scales that we find in fundamental physics. It also gives due space to the fact that bottom-up EFTs are part of model-independent experimental search strategies for BSM physics.
+In particular, we distil four lessons that concern: i) the relation that SM-EFT bears to models and theories in semantic and practice-based approaches; ii) the role of representation in models of new physics; and iii) the limits for something be considered a model in physics; iv) how a model-focused look at the presently popular practice of SM-EFT can bring a new perspective into recent philosophical debates about EFT that have taken it simply as a well-formulated theory on a particular scale that allows one to discuss traditional issues, such as realism vs. instrumentalism and reduction vs. emergence, in the light of the separation of scales that we find in fundamental physics. It also gives due space to the fact that bottom-up EFTs are part of model-independent experimental search strategies for BSM physics.

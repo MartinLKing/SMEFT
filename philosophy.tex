@@ -13,7 +13,7 @@ While some maintain the goal of axiomatically reconstructing theories \citep[amo
 The semantic approach, as it became called, focuses on the content and representation of models rather than merely on their syntactic structure.
 Here, the notion of isomorphism has played a strong role in relating the phenomena to the features of the models that describe them \citep{vf80}. 
 A theory on this view could be a set of principles, core equations, or axioms from which models can be built, or it could be a set of non-hierarchically related models. These relations can be formal \citep{suppes60} or epistemic \citep{giere88}.
-A purely syntactic view of theories will not allow one to describe the turn towards model-independent searches in particle physics described in Sections 1 and 2, because every QFT, including EFTs, and indeed every Lagrangian, qualifies a model of the theory and thus the distinction in practice that we are hoping to capture would simply be defined away.\footnote{It is true, the quantum field theory used on current particle physics is not axiomatized, but the syntactic understanding of model is often used in a looser sense described here, especially by those who have criticized philosophers' focus on axiomatic quantum field theory.}
+A purely syntactic view of theories will not allow one to describe the turn towards model-independent searches in particle physics described in Sections \ref{sec:data} and \ref{sec:eftintro}, because every QFT, including EFTs, and indeed every Lagrangian, qualifies a model of the theory and thus the distinction in practice that we are hoping to capture would simply be defined away.\footnote{It is true, the quantum field theory used on current particle physics is not axiomatized, but the syntactic understanding of model is often used in a looser sense described here, especially by those who have criticized philosophers' focus on axiomatic quantum field theory.}
 
 In order to assess bottom-up strategies like SM-EFT, we have to look at those philosophical conceptions of models that emphasize their autonomy from the framework theory or even take them as primary and emphasize their epistemic role. 
 As a bottom-up strategy, the SM-EFT does not simply extend its empirical content with new fundamental fields, but expands the standard model with higher-order terms consisting of nothing but SM fields.
@@ -29,6 +29,7 @@ A model no longer needs to be an interpretation of a formal system, a set-theore
 The distinction between model and theory can be one of degree more than kind, where a theory has broader empirical scope and is more highly confirmed. 
 In this Section, we will analyse the distinction in the context of two approaches that have already played a role in discussions of elementary particle physics, the practice-based account of \citet{morganmorrison} and the semantic account of \citet{hartmann1998}. 
 While the MaM approach emphasizes the representative and autonomous roles of models in scientific practice, Hartmann's  hierarchy of theories and models attributes a stronger role to framework theories, such as QFT, thus being somewhat closer to Suppes' version of the semantic view \citep{suppes1962}. 
+As representation is a key issue, we also introduce the artefactual view of models, given by \citet{knuuttila2011,Knuuttila2017}, that explicitly does not require the accurate representation of models. 
 
 
 On the MaM view, ``the rough and ready distinction followed by scientists is usually to reserve the word model for an account of a process that is less certain or incomplete in important respects. 
@@ -95,13 +96,15 @@ Morrison contrasts the boundary layer model, where one has to develop a target f
 It is this emphasis on the practical aspects of representation that distinguishes MaM from Hartmann's more theory-based approach---even though Hartmann's residual category (Type-B models) is pretty elastic.
 
 In our use of representation, we follow MaM and make no strong demands on isomorphism or accurate representation and gladly accept the important role of modelling practices, such as idealisation, approximation, and abstraction. 
-We take a representation to be a mathematical description of a potentially observable element of the world. 
+We take a representation to be a mathematical description of a potentially observable element of the world. [sufficiently precise target]
 In our specific context, these elements are of physics beyond the SM, such as new fields and vertices.
 Because we take a model to be a model of something, then what it represents needs to be, in a sense, distinct and well defined. 
 If it is a genuine model of BSM physics, then its target is some purported phenomenon beyond the SM and what it represents needs to be distinct from the SM. 
-If a BSM model has a distinct and well-defined representational target it will allow physicists to make specific predictions about new physics.Making numerical predictions alone, however, is not sufficient for having a well-defined target. 
-Lagrangians like the one in Eq.~\ref{eq:smeft} contain a large number of parameters that can be tweaked to absorb any measurement or squeeze out any desired prediction. 
-The essential point of equation 4 is thus the separation into a well-defined target---the SM whose sizeable number of parameters are considered fixed by experiment---and deviations from it that are parametrized in terms of an EFT.
+If a BSM model has a distinct and well-defined representational target it will allow physicists to make specific predictions about new physics.
+Making numerical predictions alone, however, is not sufficient for having a well-defined target. 
+Lagrangians like the one in Eq.~\ref{eq:smeft} contain a large number of parameters that can be tweaked to absorb any deviation. 
+% or squeeze out any desired prediction. 
+The essential point of Eqs.~\ref{eq:BSM} and \ref{eq:smeft} is thus the schematic separation into a well-defined background model---the SM whose sizeable number of parameters are considered fixed by experiment---and deviations from it that are parametrized in terms of an EFT.
 
 While the MaM approach requires that a model has some target or even representative features, others have argued  
 that representation is not a characteristic feature of a scientific model.
@@ -141,8 +144,8 @@ Another, more instrumentalist, view was developed, initially by \citet{huggetwei
 This pragmatic view is picked up on by \citet{hartmann2001}, for whom EFTs do not suggest anti-foundationalist metaphysics, nor will they eclipse models or theories, but rather that they have a role play in the search for new physics alongside models and theories.
 According to \citet{Butterfield_2010}, the use of EFTs come from ``an opportunistic or instrumentalist attitude to being unconfident'' about the applicability of QFT at high energies.
 \citet{Grinbaum2008-GRIOTE} also endorses this kind of view and likens the current interest in EFTs to the widespread use of S-matrix theory in the 1950s, where a clear consensus on the way forward was missing. 
-With considerable foresight, Grinbaum suggest that ``perhaps something like this is happening today with EFT and the model-independent analysis of new physics'' (ibid., p.~45).
-Indeed, today, physicists are unsure what the next accepted theory will be like and once again we find them turning to the pragmatic benefits of EFTs.
+With considerable foresight, Grinbaum suggests that ``perhaps something like this is happening today with EFT and the model-independent analysis of new physics'' (ibid., p.~45).
+Indeed, today, physicists are unsure what the next accepted theory will be like and once again we find them turning to pragmatic benefits in the form of EFTs.
 
 But we have to note that most of these authors have focused on EFTs in general and not specifically on the bottom-up approach of the SM-EFT.
 \citet[p.~3]{Rivat2020-RIVPFO} even allude to SM-EFT but consider it as one among many black-box models. 
@@ -153,11 +156,12 @@ Wells does not discuss whether this makes EFTs or effective theories in general 
 
 We will largely avoid issues of realism or reductionism because physicists availing themselves of SM-EFT are openly granting the reality of the SM in order to look for deviations of any kind.
 Their eventual goal is to find constraints on possible models of such new physics. 
+We are interested in the use of EFTs in practice and the importance of the bottom-up approach and find the modelling perspective to be more illuminating.
 Thus we take our discussion to pick up on questions introduced by \citet{hartmann2001}, who takes a detailed look at the history and development of EFTs in the context of models and theories.
 The metaphysical and ontological theorizing based on EFTs, which Hartmann was reluctant to do, has been strongly taken up in the last two decades, but his discussion of the roles of EFTs, models, and theories has been more quietly received.
 In looking at case studies in hadron physics, he argues that EFTs produce scientific understanding of the processes they are modelling; they are simple, intuitive, and satisfy a variety of pragmatic and cognitive goals. 
 There is rather an interplay between theories, models, and EFTs in physics research and distinguishing them is not always easy. 
-``EFTs share many of the functions of theories and models. Like models, they provide a local, intuitive account of a given phenomenon in terms of the degrees of freedom which are relevant at the energy scale under consideration. They are relatively easy to solve and to apply, and they are heuristically useful\ldots Like theories, EFTs are part of a bigger picture or framework, from which they can be derived in a controlled way. They help to make predictions and to test the theory they relate to'' \citeyear[p.~294]{hartmann2001}. 
+``EFTs share many of the functions of theories and models. Like models, they provide a local, intuitive account of a given phenomenon in terms of the degrees of freedom which are relevant at the energy scale under consideration. They are relatively easy to solve and to apply, and they are heuristically useful\ldots Like theories, EFTs are part of a bigger picture or framework, from which they can be derived in a controlled way. They help to make predictions and to test the theory they relate to'' (\citeyear[p.~294]{hartmann2001}). 
 Among Hartmann's examples are the above-discussed Fermi theory and the V--A theory of the weak interaction. 
 % Though Hartmann primarily focuses on top-down EFTs, 
 Our analysis similarly finds that the SM-EFT has complex relations to theories and models. 
